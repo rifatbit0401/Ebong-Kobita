@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="com.example.ebongkobita.SpeechActivity" >
+
+    <Button
+        android:id="@+id/buttonCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="দেশ সম্পর্কিত"
+        android:layout_margin="2dp"
+        android:background="#00365B"
+        android:textColor="#ffffff" 
+        android:textSize="@dimen/abc_action_button_min_height_material"/>
+
+    
+    <Button
+        android:id="@+id/buttonLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ভাষা সম্পর্কিত"
+        android:layout_margin="2dp"
+        android:background="#00365B"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/abc_action_button_min_height_material" />
+    
+    <Button
+        android:id="@+id/buttonReligion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ধর্ম সম্পর্কিত" 
+        android:layout_margin="2dp"
+        android:background="#00365B"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/abc_action_button_min_height_material"/>
+    
+    <Button
+        android:id="@+id/buttonMind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="মন সম্পর্কিত" 
+        android:layout_margin="2dp"
+        android:background="#00365B"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/abc_action_button_min_height_material"/>
+</LinearLayout>

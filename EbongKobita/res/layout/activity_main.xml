@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="com.example.ebongkobita.MainActivity" >
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonPoem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="কবিতা"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonLetter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="চিঠি"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="ছবি"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonStory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="গল্প"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonSpeech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="বানী"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="গান"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonMyWriting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="আমার লিখা"
+            android:textColor="#F9FBFC" 
+            android:textSize="@dimen/abc_action_button_min_height_material"/>
+
+        <Button
+            android:id="@+id/buttonWrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="নিজে লিখুন"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="খুজূন"
+            android:textColor="#F9FBFC"
+            android:textSize="@dimen/abc_action_button_min_height_material" />
+
+        <Button
+            android:id="@+id/buttonLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="#00365B"
+            android:gravity="center"
+            android:text="লিঙ্ক"
+            android:textColor="#F9FBFC" 
+            android:textSize="@dimen/abc_action_button_min_height_material"/>
+    </LinearLayout>
+
+</ScrollView>
