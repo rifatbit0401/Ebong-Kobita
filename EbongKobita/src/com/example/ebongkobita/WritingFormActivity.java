@@ -2,11 +2,14 @@ package com.example.ebongkobita;
 
 import java.sql.Types;
 
+import org.w3c.dom.Text;
+
 import com.example.model.Content;
 import com.example.repository.DBHelper;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,6 +17,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 import android.view.View.OnClickListener;
 
 public class WritingFormActivity extends ActionBarActivity {
@@ -47,7 +52,21 @@ public class WritingFormActivity extends ActionBarActivity {
 				myContent.Details=contentEditText.getText().toString();
 				myContentHelper.insertData(myContent);
 				
-				Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+				Toast.makeText(getApplicationContext(),getResources().getString(R.string.writingSaveConfirmationMsg), Toast.LENGTH_LONG).show();
+				/*Toast t=Toast.makeText(getApplicationContext(), getResources().getString(R.string.writingSaveConfirmationMsg), Toast.LENGTH_LONG);
+			    
+				TextView toastView = new TextView(getApplicationContext());
+		    	Typeface font = Typeface.createFromAsset(getAssets(), "Lohit_14-04-2007.ttf");
+			    toastView.setTypeface(font);
+			    toastView.setText(getResources().getString(R.string.writingSaveConfirmationMsg));
+				toastView.setTextColor(Color.WHITE);
+				toastView.setBackgroundColor(Color.BLACK);
+				toastView.setHeight(20);
+				
+				t.setView(toastView);
+				t.show();*/
+				
+			    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
 				startActivity(intent);
 			}
 		});

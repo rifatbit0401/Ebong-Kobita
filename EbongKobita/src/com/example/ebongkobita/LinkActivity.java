@@ -6,10 +6,14 @@ import com.example.model.Content;
 import com.example.repository.DBHelper;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
@@ -40,13 +44,24 @@ public class LinkActivity extends ActionBarActivity {
 			LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 			layoutParams.setMargins(0, 0, 0, 2);
 			
-			Button button = new Button(this);
+			final Button button = new Button(this);
 			button.setLayoutParams(layoutParams);
 			button.setText(content.Name);
 		    button.setBackgroundColor(Color.parseColor("#00365B"));
 		    button.offsetTopAndBottom(20);
 		    button.setTextColor(Color.WHITE);
 			layout.addView(button);
+			
+			button.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(button.getText().toString()));
+//					/Log.d("database", "okkkkkkkkk");
+					startActivity(intent);
+				}
+			});
 			
 		}
 		

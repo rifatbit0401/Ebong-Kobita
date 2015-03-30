@@ -45,11 +45,11 @@ public class MainActivity extends ActionBarActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("Test Preference", MODE_PRIVATE);
         boolean initialized=sharedPreferences.getBoolean("database initialize", true);
         
-        if(!sharedPreferences.contains("db3"))
+        if(!sharedPreferences.contains("db8"))
         {
         	prepeareDatabase();
         	Editor editor = sharedPreferences.edit();
-        	editor.putString("db1", "initialzed");
+        	editor.putString("db8", "initialzed");
         	editor.commit();
         }
        // sharedPreferences.
@@ -99,13 +99,13 @@ public class MainActivity extends ActionBarActivity {
     	linkDbHelper = new DBHelper(getApplicationContext(), "", null, 1, "link");
     	
     	Content content = new Content();
-    	content.Name="http://www.google.com";//getResources().getString(R.string.gan1Name);
+    	content.Name="https://www.google.com.bd/";//getResources().getString(R.string.gan1Name);
     	/*content.Author=getResources().getString(R.string.gan1Author);
     	content.Details=getResources().getString(R.string.gan1);
     	*/
     	
     	Content content1 = new Content();
-    	content1.Name="http://www.facebook.com";//getResources().getString(R.string.gan1Name);
+    	content1.Name="https://www.yahoo.com/";//getResources().getString(R.string.gan1Name);
     	
     	linkDbHelper.insertData(content);
     	linkDbHelper.insertData(content1);
@@ -145,12 +145,12 @@ public class MainActivity extends ActionBarActivity {
     	letterDbHelper = new DBHelper(getApplicationContext(), "", null, 1, "letter");
     	
     	Content letter1 = new Content();
-    	letter1.Name=getResources().getString(R.string.letter);
+    	letter1.Name=getResources().getString(R.string.cithi1Name);
     	letter1.Author=getResources().getString(R.string.cithi1Writer);
     	letter1.Details=getResources().getString(R.string.chithi1);
     	
     	Content letter2 = new Content();
-    	letter2.Name=getResources().getString(R.string.letter);
+    	letter2.Name=getResources().getString(R.string.cithi2Name);
     	letter2.Author=getResources().getString(R.string.cithi2Writer);
     	letter2.Details=getResources().getString(R.string.chithi2);
     	

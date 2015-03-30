@@ -1890,42 +1890,48 @@ containing a value of this type.
          */
         public static final int app_name=0x7f0a000f;
         public static final int author=0x7f0a0018;
-        public static final int bani1=0x7f0a002b;
-        public static final int bani2=0x7f0a002c;
-        public static final int bani3=0x7f0a002d;
-        public static final int bani4=0x7f0a002e;
-        public static final int chithi1=0x7f0a0026;
-        public static final int chithi2=0x7f0a0028;
-        public static final int chithi3=0x7f0a0029;
-        public static final int chithi4=0x7f0a002a;
-        public static final int cithi1Writer=0x7f0a0025;
-        public static final int cithi2Writer=0x7f0a0027;
-        public static final int gan1=0x7f0a0021;
-        public static final int gan1Author=0x7f0a0020;
-        public static final int gan1Name=0x7f0a001f;
-        public static final int golpo1=0x7f0a0031;
-        public static final int golpo1Name=0x7f0a002f;
-        public static final int golpo1Writer=0x7f0a0030;
-        public static final int golpo2=0x7f0a0034;
-        public static final int golpo2Name=0x7f0a0032;
-        public static final int golpo2Writer=0x7f0a0033;
+        public static final int bani1=0x7f0a002e;
+        public static final int bani2=0x7f0a002f;
+        public static final int bani3=0x7f0a0030;
+        public static final int bani4=0x7f0a0031;
+        public static final int chithi1=0x7f0a0028;
+        public static final int chithi2=0x7f0a002b;
+        public static final int chithi3=0x7f0a002c;
+        public static final int chithi4=0x7f0a002d;
+        public static final int cithi1Name=0x7f0a0026;
+        public static final int cithi1Writer=0x7f0a0027;
+        public static final int cithi2Name=0x7f0a0029;
+        public static final int cithi2Writer=0x7f0a002a;
+        public static final int gan1=0x7f0a0022;
+        public static final int gan1Author=0x7f0a0021;
+        public static final int gan1Name=0x7f0a0020;
+        public static final int golpo1=0x7f0a0034;
+        public static final int golpo1Name=0x7f0a0032;
+        public static final int golpo1Writer=0x7f0a0033;
+        public static final int golpo2=0x7f0a0037;
+        public static final int golpo2Name=0x7f0a0035;
+        public static final int golpo2Writer=0x7f0a0036;
         public static final int hello_world=0x7f0a0010;
-        public static final int kobita1=0x7f0a0024;
-        public static final int kobita1Author=0x7f0a0023;
-        public static final int kobita1Name=0x7f0a0022;
+        public static final int kobita1=0x7f0a0025;
+        public static final int kobita1Author=0x7f0a0024;
+        public static final int kobita1Name=0x7f0a0023;
         public static final int letter=0x7f0a001a;
         public static final int myWriting=0x7f0a001e;
         public static final int poem=0x7f0a0019;
         public static final int song=0x7f0a001d;
         public static final int speech=0x7f0a001c;
         public static final int story=0x7f0a001b;
-        public static final int title_activity_image=0x7f0a0035;
+        /**  <string name="title_activity_image">ImageActivity</string>
+     
+         */
+        public static final int title_activity_image=0x7f0a0038;
         public static final int title_activity_link=0x7f0a0015;
         public static final int title_activity_poem=0x7f0a0012;
         public static final int title_activity_poem_details=0x7f0a0013;
         public static final int title_activity_speech=0x7f0a0016;
         public static final int title_activity_speech_detail=0x7f0a0017;
         public static final int title_activity_writing_form=0x7f0a0014;
+        public static final int writingSaveConfirmationMsg=0x7f0a001f;
     }
     public static final class style {
         /** 
