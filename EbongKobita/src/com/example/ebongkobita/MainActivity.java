@@ -45,11 +45,11 @@ public class MainActivity extends ActionBarActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("Test Preference", MODE_PRIVATE);
         boolean initialized=sharedPreferences.getBoolean("database initialize", true);
         
-        if(!sharedPreferences.contains("db8"))
+        if(!sharedPreferences.contains("db11"))
         {
         	prepeareDatabase();
         	Editor editor = sharedPreferences.edit();
-        	editor.putString("db8", "initialzed");
+        	editor.putString("db11", "initialzed");
         	editor.commit();
         }
        // sharedPreferences.
@@ -121,7 +121,14 @@ public class MainActivity extends ActionBarActivity {
     	content.Author=getResources().getString(R.string.gan1Author);
     	content.Details=getResources().getString(R.string.gan1);
     	
+    	Content content2 = new Content();
+    	content2.Name=getResources().getString(R.string.gan2Name);
+    	content2.Author=getResources().getString(R.string.gan2Author);
+    	content2.Details=getResources().getString(R.string.gan2);
+    	
+    	
     	songDbHelper.insertData(content);
+    	songDbHelper.insertData(content2);
 	}
 
 
@@ -135,7 +142,20 @@ public class MainActivity extends ActionBarActivity {
     	content.Author=getResources().getString(R.string.kobita1Author);
     	content.Details=getResources().getString(R.string.kobita1);
     	
+    	Content content2 = new Content();
+    	content2.Name=getResources().getString(R.string.kobita2Name);
+    	content2.Author=getResources().getString(R.string.kobita2Author);
+    	content2.Details=getResources().getString(R.string.kobita2);
+    	
+    	Content content3 = new Content();
+    	content3.Name=getResources().getString(R.string.kobita3Name);
+    	content3.Author=getResources().getString(R.string.kobita3Author);
+    	content3.Details=getResources().getString(R.string.kobita3);
+    	
+
     	poemDbHelper.insertData(content);
+    	poemDbHelper.insertData(content2);
+    	poemDbHelper.insertData(content3);
 	}
 
 

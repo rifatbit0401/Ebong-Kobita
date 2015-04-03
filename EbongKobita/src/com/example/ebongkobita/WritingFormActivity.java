@@ -47,7 +47,7 @@ public class WritingFormActivity extends ActionBarActivity {
 				// TODO Auto-generated method stub
 				DBHelper myContentHelper = new DBHelper(getApplicationContext(), "", null, 1, "myWriting");
 				Content myContent = new Content();
-				myContent.Author="Own";
+				myContent.Author=getResources().getString(R.string.own);
 				myContent.Name=contentNameEditText.getText().toString();
 				myContent.Details=contentEditText.getText().toString();
 				myContentHelper.insertData(myContent);
